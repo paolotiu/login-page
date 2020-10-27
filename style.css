@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+    font-size: 18px;
+}
+.material-icons.md-24 {
+    font-size: 24px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+/*  Styles */
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #eceef1;
+    font-size: 12px;
+    color: #505050;
+    margin: 10px 40px;
+}
+
+header {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+main {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    font-size: 12px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: white;
+    background-color: #0077c5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-text {
+    line-height: 18px;
+    margin-right: 20px;
+}
+
+.header-text a {
+    color: #0077c5;
+}
+.sign-in {
+    font-size: 1.125em;
+    padding: 8px 10px;
+    width: 100px;
+}
+
+.logo {
+    padding-bottom: 20px;
+    display: block;
+    height: 35px;
+    width: 118px;
+    background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/ecosystem_logos_new-a1ca21cc.png);
+}
+
+.mint-logo {
+    height: 23px;
+    width: 23px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiMwMEE2QTQiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTAgMi43NzdjLS42NTguNjYtNS4xNzQgNS4zMDktNS4xNzQgOC45MyAwIDIuNTc4IDIuMDU1IDMuNDMyIDUuMTc0IDUuNTU0IDMuMTItMi4xMjIgNS4xNzQtMi45NzYgNS4xNzQtNS41NTQgMC0zLjYyMS00LjUxNS04LjI3LTUuMTc0LTguOTN6bTAgMTIuNzQ4bC0uNjA3LS4zOTdjLTIuMzItMS41MTEtMy4xMjMtMi4xMDEtMy4xMjMtMy40MjEgMC0yLjA0NCAyLjAyOC00Ljg4OCAzLjczLTYuODE2djEwLjYzNHoiLz48L2c+PC9zdmc+);
+}
+
+.sublogos {
+    display: flex;
+    align-items: center;
+}
+
+.sublogos li {
+    margin-right: 4px;
+}
+.mint-text {
+    height: 16px;
+    width: 37px;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNyIgaGVpZ2h0PSIxNCI+PHBhdGggZmlsbD0iIzZCNkM3MiIgZD0iTTE0LjMzMiA3LjkyN3Y1LjUzN0gxMy4wMlY4LjQ2NmMwLTEuODktLjYzNi0zLjE2NC0yLjMzNS0zLjE2NC0xLjg5IDAtMi41NjYgMS42NzktMi41NjYgMy4zNTh2NC44MDRINi44MDhWOC4xOTZjMC0xLjc1Ni0uNDI1LTIuODk0LTIuMTgxLTIuODk0LTEuMjU0IDAtMi42MjQgMS4xMi0yLjYyNCAzLjUzMXY0LjYzMUguNjlWNi40MjJjMC0uNDgzLS4wMi0xLjM3LS4wNzgtMS45ODhoMS4yNTVjLjAzOC40ODIuMDc3IDEuMTU3LjA3NyAxLjU0NGguMDM4Yy41MjEtMS4wNDMgMS42OC0xLjc3NiAyLjk3Mi0xLjc3Ni45ODQgMCAyLjE4LjM2NyAyLjc3OCAxLjkxLjYxNy0xLjIzNCAxLjcxNy0xLjkxIDMuMTY0LTEuOTEgMi4yOTcgMCAzLjQzNSAxLjQ4NiAzLjQzNSAzLjcyNXptMi44MzkgNS41MzdoMS4zMTJ2LTkuMDNIMTcuMTd2OS4wM3ptLjY1Ny0xMy40M2MtLjQ2NCAwLS45MjcuMzg3LS45MjcuOTI3cy40NjMuOTI1LjkyNy45MjVjLjQ2MyAwIC45MjUtLjM4NS45MjUtLjkyNWEuOTM4LjkzOCAwIDAgMC0uOTI1LS45Mjd6bTguMDQ0IDQuMTY4Yy0xLjI3NCAwLTIuNTg2LjczMy0zLjA4NyAxLjc3NmgtLjA0YzAtLjM4Ny0uMDM3LTEuMDYyLS4wNzctMS41NDRoLTEuMjUzYy4wNTguNjE4LjA3NyAxLjUwNS4wNzcgMS45ODh2Ny4wNDJoMS4zMTJ2LTQuNjNjMC0yLjQxMiAxLjM1LTMuNTMyIDIuNzQtMy41MzIgMS44OTEgMCAyLjQ1IDEuMjczIDIuNDUgMy4xNjR2NC45OThoMS4zMTNWNy45MjdjMC0yLjI0LTEuMTQtMy43MjUtMy40MzUtMy43MjV6bTEwLjgxNCAxLjMzMnYtMS4xSDM0LjE0VjEuODg2aC0xLjMxMnYyLjU0OGgtMS44N3YxLjFoMS44N3Y1LjYzNGMwIDEuOTg3IDEuMzUyIDIuNDEyIDIuMzE2IDIuNDEyLjU5OSAwIDEuMDgxLS4wOTYgMS41NDMtLjI3bC0uMDU2LTEuMTM5Yy0uMzUuMTc0LS43NzMuMjktMS4xNC4yOS0uNzkxIDAtMS4zNS0uMzA5LTEuMzUtMS42NlY1LjUzNGgyLjU0NnoiLz48L3N2Zz4=);
+}
