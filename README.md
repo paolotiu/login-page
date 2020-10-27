@@ -1,8 +1,8 @@
-#Mint.com Form Replica
+# Mint.com Form Replica
 
 ---
 
-##Tech Used
+## Tech Used
 
 -   HTML5
 -   CSS3
